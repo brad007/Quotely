@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "607456625118",
+    "firebase_url": "https://quotely-3d520.firebaseio.com",
+    "project_id": "quotely-3d520",
+    "storage_bucket": "quotely-3d520.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607456625118:android:da248d18147f6f0c",
+        "android_client_info": {
+          "package_name": "com.fire.quotely"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607456625118-f598jue514860sga5smj6gvqd12tnucd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fire.quotely",
+            "certificate_hash": "8d31fcaed4786b0b65a484b3e60dbb63eb57035c"
+          }
+        },
+        {
+          "client_id": "607456625118-jmsvj3dc3hmhp12fkmdd5e97kpjha2ab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhKkMKqXi7FimwQZ3ElH5lyjz4_auBlKk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607456625118-jmsvj3dc3hmhp12fkmdd5e97kpjha2ab.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

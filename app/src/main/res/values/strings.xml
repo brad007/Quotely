@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quotely</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_title">Add Title</string>
+    <string name="title_activity_quotes">QuotesActivity</string>
+    <string name="quote">“He accused me of being Dumbledore\'s man through and through.\" \"How very rude of him.\" \"I told him I was.\" Dumbledore opened his mouth to speak and then closed it again. Fawkes the phoenix let out a low, soft, musical cry. To Harry\'s intense embarrassment, he suddenly realized that Dumbledore\'s bright blue eyes looked rather watery, and stared hastily at his own knee. When Dumbledore spoke, however, his voice was quite steady.  \"I am very touched, Harry.”</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_forget_password">ForgetPasswordActivity</string>
+    <string name="web_client_id">607456625118-jmsvj3dc3hmhp12fkmdd5e97kpjha2ab.apps.googleusercontent.com</string>
+    <string name="facebook_auth_url">https://quotely-3d520.firebaseapp.com/__/auth/handler</string>
+    <string name="loading">Loading..</string>
+</resources>
