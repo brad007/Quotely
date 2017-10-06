@@ -9,7 +9,10 @@ import com.fire.quotely.adapters.QuoteDeckAdapter;
 import com.fire.quotely.etc.IntentConstants;
 import com.fire.quotely.models.Quote;
 
+import java.util.ArrayList;
+
 import io.realm.Realm;
+import io.realm.RealmResults;
 import link.fls.swipestack.SwipeStack;
 
 public class QuotesActivity extends AppCompatActivity {
@@ -45,12 +48,24 @@ public class QuotesActivity extends AppCompatActivity {
 
         Realm realm = Realm.getDefaultInstance();
 
-        QuoteDeckAdapter adapter = new QuoteDeckAdapter(realm.where(Quote.class).equalTo
-                ("title", title).findAll(),
+
+        QuoteDeckAdapter adapter = new QuoteDeckAdapter(getQuotes(realm.where(Quote.class).equalTo
+                ("title", title).findAll()),
                 this);
 
         cardStack.setAdapter(adapter);
 
     }
 
+    private ArrayList<Quote> getQuotes(RealmResults<Quote> results) {
+        ArrayList<Quote> quotes = new ArrayList<>();
+        while (quotes.size() < results.size()) {
+            int position = (int) (Math.random() * results.size());
+            Quote quote = results.get(position);
+            if (!quotes.contains(quote)) {
+                quotes.add(quote);
+            }
+        }
+        return quotes;
+    }
 }

@@ -44,15 +44,10 @@ public class SignInActivity extends AppCompatActivity implements GoogleApiClient
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
         mAuth = FirebaseAuth.getInstance();
-        mAuth.addAuthStateListener(firebaseAuth -> {
-            if (firebaseAuth.getCurrentUser() != null) {
-                startActivity(new Intent(SignInActivity.this, MainActivity.class));
-            }
-        });
 
         mGso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.web_client_id))
-                .requestEmail()
+                .requestProfile()
                 .build();
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .enableAutoManage(this, this)
@@ -117,11 +112,8 @@ public class SignInActivity extends AppCompatActivity implements GoogleApiClient
         AuthCredential credential = GoogleAuthProvider.getCredential(account.getIdToken(), null);
         mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(this, task -> {
-                    if (BuildConfig.DEBUG)
-                        Log.d(TAG, "signInWithCredential:onComplete: " + task.isSuccessful());
-
                     if (task.isSuccessful()) {
-                        //do some stuff
+                        finish();
                     } else {
                         hideProgressDialog();
                         if (BuildConfig.DEBUG) {

@@ -8,7 +8,7 @@ import android.provider.Settings;
 import android.support.v4.app.NotificationCompat;
 
 import com.fire.quotely.R;
-import com.fire.quotely.ui.activities.MainActivity;
+import com.fire.quotely.ui.fragments.TitleFragment;
 import com.firebase.jobdispatcher.JobParameters;
 import com.firebase.jobdispatcher.JobService;
 
@@ -31,7 +31,7 @@ public class NotificationDisplayJobService extends JobService {
                 .setGroup("entertainment");
 
 
-        Intent resultIntent = new Intent(this, MainActivity.class);
+        Intent resultIntent = new Intent(this, TitleFragment.class);
 
         PendingIntent resultPendingIntent = PendingIntent.getActivity(
                 this,

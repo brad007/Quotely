@@ -10,4 +10,16 @@
     <string name="web_client_id">607456625118-jmsvj3dc3hmhp12fkmdd5e97kpjha2ab.apps.googleusercontent.com</string>
     <string name="facebook_auth_url">https://quotely-3d520.firebaseapp.com/__/auth/handler</string>
     <string name="loading">Loading..</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title">Title</string>
+    <string name="submissions">Submissions</string>
+    <string name="additional_options">Additional Options</string>
+    <string name="logout">Logout</string>
+    <string name="share">Share</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -70,5 +70,18 @@ public class TitleAdapter extends RealmRecyclerViewAdapter<Title, TitleAdapter.T
             super(itemView);
             ButterKnife.bind(this, itemView);
         }
+
+        public void setTitle(String title) {
+            titleTextView.setText(title);
+        }
+
+        public void setQuote(String quote) {
+            titleQuoteTextView.setText(quote);
+        }
+
+        public void setLogo(String logo) {
+            titleLogoTextView.setText(logo);
+        }
+
     }
 }

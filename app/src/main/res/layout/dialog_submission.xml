@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/title_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/tagline_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tag line"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/acronym_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Acronym"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+</FrameLayout>

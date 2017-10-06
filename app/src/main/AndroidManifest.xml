@@ -10,12 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.activities.MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity
             android:name=".ui.activities.AddTitleActivity"
             android:label="@string/title_activity_add_title"
             android:theme="@style/AppTheme.NoActionBar">
@@ -53,16 +47,21 @@
             android:name=".ui.activities.SignInActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity
             android:name=".ui.activities.ForgetPasswordActivity"
             android:label="@string/title_activity_forget_password"
             android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.activities.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
     </application>
 

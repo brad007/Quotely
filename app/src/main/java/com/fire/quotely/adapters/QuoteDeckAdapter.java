@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.fire.quotely.R;
 import com.fire.quotely.models.Quote;
 
-import io.realm.RealmResults;
+import java.util.ArrayList;
 
 /**
  * Created by LLL-Brad on 10/3/2017.
@@ -18,10 +18,10 @@ import io.realm.RealmResults;
 
 public class QuoteDeckAdapter extends BaseAdapter {
 
-    private RealmResults<Quote> data;
+    private ArrayList<Quote> data;
     private Context context;
 
-    public QuoteDeckAdapter(RealmResults<Quote> data, Context context) {
+    public QuoteDeckAdapter(ArrayList<Quote> data, Context context) {
         this.data = data;
         this.context = context;
     }
@@ -49,7 +49,6 @@ public class QuoteDeckAdapter extends BaseAdapter {
             // normally use a viewholder
             v = inflater.inflate(R.layout.item_quote, viewGroup, false);
         }
-
 
 
         TextView quoteTextView = v.findViewById(R.id.quote_textview);
